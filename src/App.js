@@ -47,22 +47,21 @@ function App() {
     <>
     {/* <Navbar title= 'TextUtils' aboutText="About TextUtils"/> */}
    
-
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
     <Navbar title= 'TextUtils' mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
     <div className="container my-3" >
    
    
-      <Routes>
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/" element={<TextForm heading="Enter the text to analyze below" onShowAlert={showAlert} mode={mode} />} />
+      {/* <Routes> */}
+        {/* <Route exact path="/about" element={<About />} /> */}
+        {/* <Route exact path="/" element={<TextForm heading="Enter the text to analyze below" onShowAlert={showAlert} mode={mode} />} /> */}
         {/* <Route path="/users/*" element={<UserApp />} /> */}
-      </Routes> 
+      {/* </Routes>  */}
     {/* <About/>    */}
-    {/* <TextForm heading="Enter the text to analyze below" onShowAlert={showAlert } mode={mode}/> */}
+    <TextForm heading="Enter the text to analyze below" onShowAlert={showAlert } mode={mode}/>
     </div> 
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
  
 
   
@@ -70,5 +69,4 @@ function App() {
     
   );
 }
-
 export default App;
